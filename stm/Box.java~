@@ -1,0 +1,15 @@
+package stm;
+
+import java.util.*;
+
+public class Box <A> {
+	
+	volatile A conteudo;
+
+	public Box(A conteudo){
+		this.conteudo = conteudo;
+	}
+
+	public A getConteudo(){return this.conteudo;}
+	public void setConteudo(A conteudo){this.conteudo = conteudo;}
+}

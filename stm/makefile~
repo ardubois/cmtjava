@@ -1,0 +1,10 @@
+#JCC = ${CMTJAVAC}/closures/bin/javac
+
+JFLAGS = -Xlint:none -d ../../build/
+
+default:
+	javac $(JFLAGS) *.java
+
+clean: 
+	$(RM) *.java
+				
